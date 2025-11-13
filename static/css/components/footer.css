@@ -1,0 +1,8 @@
+/* Стили для компонента Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+    opacity: 0.8;
+}
+
