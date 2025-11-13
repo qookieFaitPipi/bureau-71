@@ -1,0 +1,38 @@
+/* Стили для компонента Header - ВСЕ классы должны начинаться с .header */
+/* Пример: если используете class="content" в header.html, пишите .header .content */
+
+.logo {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  width: 300px
+}
+
+.text {
+  font-size: 40px;
+  color: white;
+  max-width: 300px;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* Пример: если в header.html будет <div class="content">, пишите так: */
+/* .header .content {
+  background: red;
+} */
