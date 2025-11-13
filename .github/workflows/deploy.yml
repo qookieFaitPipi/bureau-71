@@ -23,6 +23,3 @@ jobs:
 
       - name: Show running containers
         run: docker ps -a
-
-      - name: Show service logs
-        run: docker compose logs frontend
