@@ -1,19 +1,25 @@
-/* Стили для компонента Header */
-header {
+/* Стили для компонента Header - ВСЕ классы должны начинаться с .header */
+/* Пример: если используете class="content" в header.html, пишите .header .content */
+
+.header {
     padding: 2rem 0;
     text-align: center;
     color: white;
 }
 
-h1 {
+.header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
-.subtitle {
+.header .subtitle {
     font-size: 1.5rem;
     opacity: 0.9;
     margin-bottom: 3rem;
 }
 
+/* Пример: если в header.html будет <div class="content">, пишите так: */
+/* .header .content {
+    background: red;
+} */
