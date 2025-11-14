@@ -6,5 +6,16 @@
 /* Компоненты */
 @import url('components/header.css');
 @import url('components/logo.css');
+@import url('components/about.css');
+@import url('components/roads.css');
+@import url('components/structures.css');
+@import url('components/communications.css');
+@import url('components/aero.css');
+@import url('components/metro.css');
+@import url('components/build.css');
+@import url('components/sec.css');
+@import url('components/objects.css');
+
+
 @import url('components/footer.css');
 

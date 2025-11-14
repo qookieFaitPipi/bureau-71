@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-    <div class="container">
-        {% include 'components/header.html' %}
-        {% include 'components/logo.html' %}
+    {% include 'components/header.html' %}
+    {% include 'components/logo.html' %}
+    {% include 'components/about.html' %}
+    {% include 'components/roads.html' %}
+    {% include 'components/structures.html' %}
+    {% include 'components/communications.html' %}
+    {% include 'components/aero.html' %}
+    {% include 'components/metro.html' %}
+    {% include 'components/build.html' %}
+    {% include 'components/sec.html' %}
+    {% include 'components/objects.html' %}
 
-        {% include 'components/footer.html' %}
-    </div>
+
+    {% include 'components/footer.html' %}
 </body>
 </html>

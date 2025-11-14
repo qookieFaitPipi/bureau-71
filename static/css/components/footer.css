@@ -1,18 +1,9 @@
-/* Стили для компонента Footer - ВСЕ классы должны начинаться с .footer */
-/* Пример: если используете class="content" в footer.html, пишите .footer .content */
-
 .footer {
     text-align: center;
     padding: 2rem 0;
+    background: #002443;
+
+}
+.content__footer {
     color: white;
-    opacity: 0.8;
 }
-
-.footer p {
-    margin: 0;
-}
-
-/* Пример: если в footer.html будет <div class="content">, пишите так: */
-/* .footer .content {
-    background: blue;
-} */
