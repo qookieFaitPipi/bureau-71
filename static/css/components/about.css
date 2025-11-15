@@ -1,9 +1,13 @@
 .about {
   display: flex;
   width: 100%;
-  height: 900px;
+  margin-bottom: 100px;
   justify-content: center;
   background: white;
+}
+
+.big__up__about {
+  padding-left: 45px;
 }
 
 .down__about {
@@ -17,26 +21,38 @@
 
 .title__about {
   color: #95a3cb;
+  font-family: 'AGForeignerBlackC';
+  font-size: 30pt;
 }
 
 .big__text__about {
+  padding-top: 40px;
   color: #1e5093;
+  font-family: 'AGForeignerLightC';
+  font-size: 33pt;
+  line-height: 1;
 }
 
 .bold__about {
+  padding-top: 10px;
   color: #1e5093;
+  font-family: 'AGForeignerBlackC';
+  font-size: 12pt;
 }
 
 .thin__about {
   color: black;
+  font-family: 'AGForeignerC';
+  font-size: 12pt;
+  padding-left: 18px;
 }
 
 .photo__about {
-  padding-left: 50px;
+  padding-top: 10px;
 }
 
 .photo__about img {
-  width: 500px;
+  width: 550px;
   height: 400px;
   object-fit: cover;
   object-position: center;

@@ -1,0 +1,5 @@
+Буквы "Заглавие1": AGForeignerBlackC 30 пт - a4aad0
+Буквы "Заглавие2" AGForeignerLightC 33 пт, "Подзаглавие" AGForeignerBlackC 12 пт - 2d5092
+Основной текст: AGForeignerC 12 пт
+Личности: ФИО - AGForeignerMediumC 12 пт, должность - AGForeignerC-Bold 12 пт, текст - AGForeignerC 12 пт 
+Фон - 002643

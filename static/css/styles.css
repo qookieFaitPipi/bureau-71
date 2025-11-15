@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'AGForeignerBlackC';
+  src: url('/static/fonts/AGForeignerBlackC.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AGForeignerLightC';
+  src: url('/static/fonts/AGForeignerLightC.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AGForeignerC';
+  src: url('/static/fonts/AGForeignerC.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AGForeignerMediumC';
+  src: url('/static/fonts/AGForeignerMediumC.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AGForeignerC-Bold';
+  src: url('/static/fonts/AGForeignerC-Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}

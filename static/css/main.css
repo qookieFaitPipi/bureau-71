@@ -2,6 +2,7 @@
 
 /* Базовые стили */
 @import url('base.css');
+@import url('/static/css/styles.css');
 
 /* Компоненты */
 @import url('components/header.css');

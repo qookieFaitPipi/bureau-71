@@ -1,7 +1,7 @@
 .struc {
   display: flex;
   width: 100%;
-  height: 900px;
+  margin-bottom: 100px;
   justify-content: center;
   background: white;
 }
@@ -12,16 +12,30 @@
 
 .title__struc {
   color: #95a3cb;
+  font-family: 'AGForeignerBlackC';
+  font-size: 30pt;
+  line-height: 1;
+  padding-bottom: 10px;
 }
 
 .big__text__struc {
   color: #1e5093;
+  font-family: 'AGForeignerLightC';
+  font-size: 33pt;
+  line-height: 1;
+  padding-bottom: 10px;
 }
 
 .bold__struc {
   color: #1e5093;
+  font-family: 'AGForeignerBlackC';
+  font-size: 12pt;
 }
 
-.thin__srtuc {
+.thin__struc {
   color: black;
+  font-family: 'AGForeignerC';
+  font-size: 12pt;
+  padding-left: 17px;
+  padding-bottom: 10px;
 }

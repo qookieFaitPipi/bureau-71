@@ -1,7 +1,7 @@
 .aero {
   display: flex;
   width: 100%;
-  height: 900px;
+  margin-bottom: 50px;
   justify-content: center;
   background: white;
 }
@@ -12,12 +12,25 @@
 
 .title__aero {
   color: #95a3cb;
+  font-family: 'AGForeignerBlackC';
+  font-size: 30pt;
+  line-height: 1;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .big__text__aero {
   color: #1e5093;
+  font-family: 'AGForeignerLightC';
+  font-size: 33pt;
+  line-height: 1;
+  padding-bottom: 10px;
 }
 
 .thin__aero {
   color: black;
+  font-family: 'AGForeignerC';
+  font-size: 12pt;
+  padding-left: 17px;
+  padding-bottom: 10px;
 }
