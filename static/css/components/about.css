@@ -6,6 +6,11 @@
   background: white;
 }
 
+.down__about {
+  display: flex;
+  justify-content: space-between;
+}
+
 .content__about {
   width: 1200px;
 }
@@ -24,4 +29,15 @@
 
 .thin__about {
   color: black;
+}
+
+.photo__about {
+  padding-left: 50px;
+}
+
+.photo__about img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
 }

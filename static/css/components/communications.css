@@ -25,3 +25,14 @@
 .thin__coms {
   color: black;
 }
+
+.photo__coms {
+  padding-top: 30px;
+}
+
+.photo__coms img{
+  width: 500px;
+  height: 275px;
+  object-fit: cover;
+  object-position: center;
+}

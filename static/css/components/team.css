@@ -1,0 +1,55 @@
+.team {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  background: #002443;
+}
+
+.content__team {
+  width: 1200px;
+}
+
+.title__team {
+  color: #95a3cb;
+  font-size: 24px;
+}
+
+.up_about {
+  color: white;
+}
+
+.down__team {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.people__team {
+  display: flex;
+  max-width: 1200px;
+  gap:25px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+}
+
+.person img {
+  height: 260px;
+
+}
+
+.fio__team {
+  color: white;
+}
+
+.job__team {
+  color: white;
+}
+
+.about__team {
+  color: white;
+  max-width: 300px;
+}

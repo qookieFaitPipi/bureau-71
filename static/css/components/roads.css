@@ -6,6 +6,11 @@
   background: white;
 }
 
+.block__points__roads {
+  display: flex;
+  justify-content: space-between;
+}
+
 .content__roads {
   width: 1200px;
 }
@@ -24,4 +29,12 @@
 
 .thin__roads {
   color: black;
+}
+
+.photo__roads img {
+  width: 500px;
+  height:400px;
+  object-fit: cover;
+  object-position: center;
+  padding-right: 50px;
 }
