@@ -1,9 +1,11 @@
 .header {
     display: flex;
+    position: fixed;
     width: 100%;
-    height:100px;
+    height: 10vh;
     background: #002443;
     justify-content: center;
+    z-index: 2;
 }
 
 .content__header {
@@ -12,5 +14,18 @@
     align-items: center;
     justify-content: center;
     font-family: 'AGForeignerC-Bold';
+}
 
+.nav  {
+    display: flex;
+}
+
+.nav div{
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
 }

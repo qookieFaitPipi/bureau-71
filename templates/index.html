@@ -17,11 +17,13 @@
     {% include 'components/metro.html' %}
     {% include 'components/build.html' %}
     {% include 'components/sec.html' %}
-    {% include 'components/objects.html' %}
     {% include 'components/team.html' %}
     {% include 'components/void.html' %}
 
 
     {% include 'components/footer.html' %}
+
+    <script src="{{ url_for('static', filename='js/main.js') }}">
+    </script>
 </body>
 </html>
