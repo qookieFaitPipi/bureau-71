@@ -61,6 +61,7 @@
   font-family: 'AGForeignerC-Bold';
   font-size: 12pt;
   line-height: 1.1;
+  height: 35px;
 }
 
 .about__team {
@@ -70,6 +71,18 @@
   font-size: 12pt;
   margin-top: 10px;
   line-height: 1.1;
+}
+
+.director {
+  width: 80px;
+}
+
+.engineer {
+  width: 80px;
+}
+
+.fin__director {
+  width: 80px;
 }
 
 @media (max-width: 1000px) {
@@ -111,5 +124,17 @@
 
   .info__team {
     flex: 1;
+  }
+
+  .director {
+    width: 100%;
+  }
+  
+  .engineer {
+    width: 100%;
+  }
+  
+  .fin__director {
+    width: 100%;
   }
 }
