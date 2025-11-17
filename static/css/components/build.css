@@ -38,3 +38,33 @@
   font-size: 12pt;
   margin-left: 17px;
 }
+
+@media (max-width: 1000px){
+  .struc {
+    justify-content: flex-start;
+  }
+
+  .title__build {
+    font-size: 17pt;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+
+  .big__text__build {
+    font-size: 17pt;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .bold__build {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .thin__build li{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

@@ -71,3 +71,13 @@
   margin-top: 10px;
   line-height: 1.1;
 }
+
+@media (max-width: 1000px) {
+  .content__team {
+    width: 100%;
+  }
+
+  .person {
+    flex-direction: row;
+  }
+}
