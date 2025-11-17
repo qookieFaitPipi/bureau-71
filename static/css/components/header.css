@@ -31,6 +31,10 @@ html {
 }
 
 @media (max-width: 1000px) {
+    .content__header {
+        width: 100%;
+    }
+    
     .nav div {
         margin:5px;
         font-size: 8pt;
