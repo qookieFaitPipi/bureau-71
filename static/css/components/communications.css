@@ -49,3 +49,28 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width: 1000px){
+  .coms {
+    justify-content: flex-start;
+  }
+
+  .title__coms {
+    font-size: 24pt;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+
+  .big__text__coms {
+    font-size: 24pt;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .thin__coms li{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

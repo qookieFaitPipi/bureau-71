@@ -29,3 +29,11 @@
 html {
     scroll-behavior: smooth;
 }
+
+@media (max-width: 1000px) {
+    .nav div {
+        margin:5px;
+        font-size: 8pt;
+    }
+    
+}
