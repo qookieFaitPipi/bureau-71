@@ -13,7 +13,7 @@
     color: white;
     align-items: center;
     justify-content: center;
-    font-family: 'AGForeignerC-Bold';
+    font-family: 'AGForeignerMediumC';
 }
 
 .nav  {
@@ -37,7 +37,7 @@ html {
     
     .nav div {
         margin:5px;
-        font-size: 8pt;
+        font-size: 9pt;
     }
     
 }
