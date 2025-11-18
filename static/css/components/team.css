@@ -125,6 +125,7 @@
 
   .info__team {
     flex: 1;
+    max-width: 300px;
   }
 
   .director {
@@ -140,10 +141,14 @@
   }
 
   .job__team {
-    height: 20px;
+    height: 18px;
   }
 
-  .about__team {
+  .zam__director {
+    height: 38px;
+  }
 
+  .complex__engineer {
+    height: 38px;
   }
 }
