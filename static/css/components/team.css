@@ -113,11 +113,12 @@
   .person {
     margin-bottom: 15px;
     margin-left: 15px;
+    width: 100%;
   }
 
   .person img {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
     object-position: center;
   }
@@ -136,5 +137,13 @@
   
   .fin__director {
     width: 100%;
+  }
+
+  .job__team {
+    height: 20px;
+  }
+
+  .about__team {
+
   }
 }
