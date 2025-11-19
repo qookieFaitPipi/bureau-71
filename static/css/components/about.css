@@ -4,6 +4,7 @@
   justify-content: center;
   background: white;
   margin-top: calc(10vh + 70px);
+  margin-bottom: 70px;
 }
 
 .big__up__about {
@@ -49,6 +50,7 @@
 
 .photo__about {
   margin-top: 13px;
+  height: 85%;
 }
 
 .photo__about img {
