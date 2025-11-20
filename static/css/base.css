@@ -18,3 +18,14 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/* Убрать подчеркивание и изменить цвет */
+a[href^="tel"] {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Убрать подсветку при нажатии */
+a[href^="tel"] {
+    -webkit-tap-highlight-color: transparent;
+}
