@@ -12,34 +12,34 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Check Docker setup
+      - name: Fix Docker permissions
         run: |
-          echo "=== Docker Setup Check ==="
-          docker --version || echo "Docker not found"
-          docker compose version || echo "Docker Compose not found"
-          ls -la /var/run/docker.sock 2>/dev/null || echo "Docker socket not found"
+          echo "=== Fixing Docker permissions ==="
+          # Добавляем пользователя runner в группу docker
+          sudo usermod -aG docker $USER || true
+          # Или даем права на socket всем (менее безопасно)
+          sudo chmod 666 /var/run/docker.sock || true
+          # Проверяем
+          ls -la /var/run/docker.sock
+          id
 
-      - name: Setup Docker Buildx
+      - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        id: buildx  # Важно: добавить id для ссылки
-
-      - name: Show Buildx info
-        run: |
-          echo "=== Buildx Information ==="
-          docker buildx version
-          docker buildx ls
-          docker buildx inspect
+        with:
+          driver: docker
+          endpoint: unix:///var/run/docker.sock
 
       - name: Build and start services
         run: |
-          echo "=== Building and starting services ==="
-          # Пробуем без sudo, потом с sudo если нужно
-          docker compose up --build -d || sudo docker compose up --build -d
-          sleep 5
-
+          echo "=== Building services ==="
+          docker compose build --no-cache
+          echo "=== Starting services ==="
+          docker compose up -d
+          sleep 10
+          
       - name: Verify deployment
         run: |
           echo "=== Running containers ==="
-          docker ps -a || sudo docker ps -a
-          echo "=== Compose services ==="
-          docker compose ps || sudo docker compose ps
+          docker ps
+          echo "=== Compose status ==="
+          docker compose ps
