@@ -1,3 +1,4 @@
+
 name: Deploy Multi-Service App (Docker Compose)
 
 on:
@@ -12,34 +13,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Fix Docker permissions
-        run: |
-          echo "=== Fixing Docker permissions ==="
-          # Добавляем пользователя runner в группу docker
-          sudo usermod -aG docker $USER || true
-          # Или даем права на socket всем (менее безопасно)
-          sudo chmod 666 /var/run/docker.sock || true
-          # Проверяем
-          ls -la /var/run/docker.sock
-          id
-
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        with:
-          driver: docker
-          endpoint: unix:///var/run/docker.sock
 
-      - name: Build and start services
+      - name: Build and start all services with Docker Compose
         run: |
-          echo "=== Building services ==="
-          docker compose build --no-cache
-          echo "=== Starting services ==="
-          docker compose up -d
+          docker compose up --build -d
           sleep 10
-          
-      - name: Verify deployment
-        run: |
-          echo "=== Running containers ==="
-          docker ps
-          echo "=== Compose status ==="
-          docker compose ps
+
+      - name: Show running containers
+        run: docker ps -a
