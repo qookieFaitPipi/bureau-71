@@ -8,4 +8,4 @@ services:
     environment:
       - FLASK_ENV=development
     restart: unless-stopped
-
+    
